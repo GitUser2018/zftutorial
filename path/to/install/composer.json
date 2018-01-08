@@ -20,16 +20,19 @@
         "zendframework/zend-db": "^2.8.1",
         "zendframework/zend-json": "^3.0",
         "zendframework/zend-log": "^2.9",
-        "zendframework/zend-session": "^2.7.1"
+        "zendframework/zend-session": "^2.7.1",
+        "phpunit/php-code-coverage": "^4.0"
     },
     "autoload": {
         "psr-4": {
-            "Portal\\": "module/Portal/src/"
+            "Portal\\": "module/Portal/src/",
+            "ZFT\\": "module/ZFT/src/"             
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PortalTest\\": "module/Portal/test/"
+            "PortalTest\\": "module/Portal/test/",
+            "ZFTTest\\": "module/ZFT/test/"           
         }
     },
     "extra": [],
@@ -47,6 +50,7 @@
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.1.0",
-        "zendframework/zend-test": "^3.0.1"
+        "zendframework/zend-test": "^3.0.1",
+        "phpunit/php-code-coverage": "^4.0"
     }
 }

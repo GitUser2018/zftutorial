@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
-    <testsuites>
+    <!-- <testsuites>
         <testsuite name="ZendSkeletonApplication Test Suite">
             <directory>./module/Portal/test</directory>
         </testsuite>
+    </testsuites> -->
+
+    <testsuites>
+        <testsuite name="Platform">
+            <directory suffix="Test.php">C:\xampp\htdocs\zftutorial\path\to\install\module\ZFT\test</directory>
+            <!-- <directory suffix="Test.php">C:\xampp\htdocs\zftutorial\path\to\install\module\Portal\test\Controller</directory> -->
+            <file></file>
+        </testsuite>
     </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+        <directory>C:\xampp\htdocs\zftutorial\path\to\install\module\ZFT\src</directory>
+        <!-- <directory>C:\xampp\htdocs\zftutorial\path\to\install\module\Portal\src</directory> -->
+            <exclude>
+                <file></file>
+                <file></file>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <php>
+        <const name="PHPUNIT_TESTSUITE" value="true"/>
+    </php>
 </phpunit>
